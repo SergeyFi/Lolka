@@ -1,7 +1,9 @@
 from Modules.FractionHolder import FractionHolder
+from Modules.CLI import CLI
 
-FractionHolder = FractionHolder('12')
+CLI = CLI()
 
-print(FractionHolder.get_numerator())
-print(FractionHolder.get_denominator())
-print(FractionHolder.get_answer())
+CLI.greeting()
+CLI.input_period()
+CLI.print_answer()
+CLI.to_repeat()
