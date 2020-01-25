@@ -1,4 +1,3 @@
-from Modules.FractionHolder import FractionHolder
 from Modules.CLI import CLI
 
 CLI = CLI()
