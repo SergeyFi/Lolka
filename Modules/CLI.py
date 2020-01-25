@@ -24,7 +24,7 @@ class CLI:
 
     def print_answer(self):
         print("Periodic fraction: ", self._FractionHolder.get_answer())
-        print("Fraction: ", str(self._FractionHolder.get_numerator()) + "/" + str(self._FractionHolder.get_denominator()))
+        print("Fraction: ", str(int(self._FractionHolder.get_numerator())) + "/" + str(int(self._FractionHolder.get_denominator())))
 
     def to_repeat(self):
         print('Repeat ? Yes/No')
