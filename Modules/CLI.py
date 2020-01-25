@@ -26,14 +26,17 @@ class CLI:
         print("Periodic fraction: ", self._FractionHolder.get_answer())
         print("Fraction: ", str(int(self._FractionHolder.get_numerator())) + "/" + str(int(self._FractionHolder.get_denominator())))
 
+    def dialog(self):
+        self.input_period()
+        self.print_answer()
+        self.to_repeat()
+
     def to_repeat(self):
         print('Repeat ? Yes/No')
         answer = str(input())
         answer.lower()
 
         if answer == 'yes' or answer == 'y':
-            self.input_period()
-            self.print_answer()
-            self.to_repeat()
+            self.dialog()
         else:
             exit()
